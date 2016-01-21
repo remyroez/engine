@@ -41,7 +41,7 @@ public:
 	// data validation.
 	bool valid() const { return (_data != nullptr); }
 
-private
+private:
 	// raw data
 	SDL_Window *_data;
 };

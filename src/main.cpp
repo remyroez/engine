@@ -2,7 +2,9 @@
 #include "hex/hex.hpp"
 
 int main(int argc, char *argv[]) {
-	SDL_Init(SDL_INIT_VIDEO);
+	SDL_Init(0);
+
+	hex::sdl2::System<SDL_INIT_VIDEO> system;
 
 	hex::sdl2::Window window(
 		"test window",

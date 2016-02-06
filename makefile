@@ -20,7 +20,7 @@ ifeq "$(shell getconf LONG_BIT)" "64"
 else
   LDFLAGS =
 endif
-LDFLAGS  += -s -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lpthread
+LDFLAGS  += -s -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++
 
 ifeq ($(OS), Windows_NT)
 LIBS      = -lmingw32 -lSDL2main
